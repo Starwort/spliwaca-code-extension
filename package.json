@@ -1,0 +1,25 @@
+{
+    "name": "spliwaca",
+    "displayName": "spliwaca",
+    "description": "Language extension for SPLIWACA, the Standardised Pseudo-Language Implemented With(out) A Cool Acronym",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "spliwaca",
+            "aliases": ["SPLIWACA", "spliwaca"],
+            "extensions": [".splw"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "spliwaca",
+            "scopeName": "source.spliwaca",
+            "path": "./syntaxes/spliwaca.tmLanguage.json"
+        }]
+    }
+}
